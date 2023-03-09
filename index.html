@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1 </title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container m-4">
+        <div class="row m-2">
+            <div class="col-sm-6 text-center p-3">
+                <h2>FORM</h2>
+            </div>
+            <div class="col-sm-6 text-center  p-3">
+                <h2>TABLE</h2>
+            </div>
+        </div>
+        <div class="row m-2">
+            <div class="col-sm-6 p-3">
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="phno" class="form-label">Phone Number</label>
+                        <input type="number" class="form-control" id="phno">
+                    </div>
+                    <div class="mb-3">
+                        <label for="dob" class="form-label">Date of Birth</label>
+                        <input type="date" class="form-control" id="dob">
+                    </div>
+                    <div class="mb-3">
+                        <label for="address" class="form-label">Address</label>
+                        <textarea name="address" class="form-control"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="gender" class="form-label">Gender</label>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="male" type="radio" name="gender">
+                            <label for="male" class="form-check-label">Male</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="female" type="radio" name="gender">
+                            <label for="female" class="form-check-label">Female</label>
+                        </div>
+                    </div>
+                    <div class="mb-3 ">
+                        <label for="city" class="form-label">City</label>
+                        <select class="form-select" id="city" name="city">
+                            <option value="none" selected disabled hidden>Select a City</option>
+                            <option value="kolkata">Kolkata</option>
+                            <option value="gurugram">Gurugram</option>
+                            <option value="bangalore">Bangalore</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="hobby" class="form-label">Hobby</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="music" id="hobby1">
+                            <label class="form-check-label" for="hobby1">Music</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="sports" id="hobby2">
+                            <label class="form-check-label" for="hobby2"> Sports</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="reading" id="hobby3">
+                            <label class="form-check-label" for="hobby3">Reading</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="dancing" id="hobby4">
+                            <label class="form-check-label" for="hobby4"> Dancing</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="reset" class="btn btn-primary">Reset</button>
+                </form>
+            </div>
+            <div class="col-sm-6 p-3">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">SNo</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Phone no</th>
+                            <th scope="col">Gender</th>
+                            <th scope="col">City</th>
+                            <th scope="col">Hobbies</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Manshi</td>
+                            <td>9997723123</td>
+                            <td>Female</td>
+                            <td>Kolkata</td>
+                            <td>Reading<br>
+                                Writing<br>
+                                Dancing
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Mack</td>
+                            <td>1153037466</td>
+                            <td>Male</td>
+                            <td>Bangalore</td>
+                            <td>Singing<br>
+
+                                Cooking
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>John</td>
+                            <td>9865472234</td>
+                            <td>Male</td>
+                            <td>Gurugram</td>
+                            <td>Cooking<br>
+                                Dancing<br>
+                                Traveling
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
